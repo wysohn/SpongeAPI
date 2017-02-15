@@ -31,7 +31,6 @@ import static org.mockito.Mockito.when;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mockito;
 import org.spongepowered.api.Game;
 import org.spongepowered.api.event.CauseStackManager;
 import org.spongepowered.api.event.EventManager;
@@ -54,22 +53,22 @@ public class SimpleServiceManagerTest {
         this.manager = mock(PluginManager.class);
         this.testPluginContainer = mock(PluginContainer.class);
         when(this.testPluginContainer.getId()).thenReturn("TestPlugin");
-        when(this.manager.fromInstance(testPlugin)).thenReturn(Optional.of(this.testPluginContainer));
+        when(this.manager.fromInstance(this.testPlugin)).thenReturn(Optional.of(this.testPluginContainer));
 
         Game game = mock(Game.class);
         TestHooks.setInstance("eventManager", mock(EventManager.class));
         when(game.getEventManager()).thenReturn(mock(EventManager.class));
         CauseStackManager csm = mock(CauseStackManager.class);
-        Mockito.when(game.getCauseStackManager()).thenReturn(csm);
-        Mockito.when(csm.pushCause(null)).thenReturn(csm);
-        Mockito.when(csm.popCause()).thenReturn(null);
-        Mockito.when(csm.getCurrentCause()).thenReturn(Cause.of(EventContext.empty(), this));
+        when(game.getCauseStackManager()).thenReturn(csm);
+        when(csm.pushCause(null)).thenReturn(csm);
+        when(csm.popCause()).thenReturn(null);
+        when(csm.getCurrentCause()).thenReturn(Cause.of(EventContext.empty(), this));
         TestHooks.setGame(game);
     }
 
     @Test
     public void testRegisterService() {
-        SimpleServiceManager serviceManager = new SimpleServiceManager(manager);
+        SimpleServiceManager serviceManager = new SimpleServiceManager(this.manager);
 
         serviceManager.setProvider(this.testPlugin, TestInterface.class, new TestImplCow());
 
@@ -82,9 +81,9 @@ public class SimpleServiceManagerTest {
 
     @Test
     public void testDuplicateRegistrationAllowed() {
-        SimpleServiceManager serviceManager = new SimpleServiceManager(manager);
-        serviceManager.setProvider(testPlugin, TestInterface.class, new TestImplCow());
-        serviceManager.setProvider(testPlugin, TestInterface.class, new TestImplDog());
+        SimpleServiceManager serviceManager = new SimpleServiceManager(this.manager);
+        serviceManager.setProvider(this.testPlugin, TestInterface.class, new TestImplCow());
+        serviceManager.setProvider(this.testPlugin, TestInterface.class, new TestImplDog());
 
         assertEquals("woof", serviceManager.provideUnchecked(TestInterface.class).bark());
     }
