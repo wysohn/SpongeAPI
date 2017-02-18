@@ -14,7 +14,7 @@ buildscript {
     dependencies {
         classpath 'gradle.plugin.net.minecrell:licenser:0.3'
         classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
-        classpath 'org.spongepowered:event-impl-gen:2.1.0-SNAPSHOT'
+        classpath 'org.spongepowered:event-impl-gen:3.0.0-SNAPSHOT'
         classpath 'gradle.plugin.org.spongepowered:spongegradle:0.8'
     }
 }
@@ -66,7 +66,7 @@ dependencies {
 
     // Event generation
     compile 'org.ow2.asm:asm:5.0.3'
-    compile 'org.spongepowered:event-gen-core:2.1.0-SNAPSHOT'
+    compile 'org.spongepowered:event-gen-core:3.0.0-SNAPSHOT'
 }
 
 // JAR manifest configuration
@@ -114,7 +114,8 @@ genEventImpl {
     excludeSrc = []
     outputDir = 'src/main/java/'
     outputFactory = 'org.spongepowered.api.event.SpongeEventFactory'
-    eventImplCreateMethod = 'org.spongepowered.api.event.SpongeEventFactoryUtils.createEventImpl'
+    outputInterface = 'org.spongepowered.api.event.EventFactory'
+    eventImplCreateMethod = 'org.spongepowered.api.Sponge.getEventFactory'
     sortPriorityPrefix = 'original'
     groupingPrefixes = ['from': 'to']
     validateCode = false
