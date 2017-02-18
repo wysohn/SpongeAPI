@@ -19,6 +19,7 @@ afterEvaluate {
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
         name = 'sponge'

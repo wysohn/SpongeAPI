@@ -1,6 +1,7 @@
 // Gradle plugins
 buildscript {
     repositories {
+        mavenLocal()
         maven {
             name = 'gradle-plugins'
             url = 'https://plugins.gradle.org/m2'
@@ -14,7 +15,7 @@ buildscript {
     dependencies {
         classpath 'gradle.plugin.net.minecrell:licenser:0.3'
         classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
-        classpath 'org.spongepowered:event-impl-gen:3.0.0-SNAPSHOT'
+        classpath 'org.spongepowered:event-impl-gen:4.0.0-SNAPSHOT'
         classpath 'gradle.plugin.org.spongepowered:spongegradle:0.8'
     }
 }
@@ -65,8 +66,10 @@ dependencies {
     compile 'com.flowpowered:flow-noise:1.0.1-SNAPSHOT'
 
     // Event generation
-    compile 'org.ow2.asm:asm:5.0.3'
-    compile 'org.spongepowered:event-gen-core:3.0.0-SNAPSHOT'
+    compile 'org.ow2.asm:asm-debug-all:5.0.3'
+    compile 'org.spongepowered:event-gen-core:4.0.0-SNAPSHOT'
+
+    compile files(eventGenJar).builtBy(tasks.genEventImpl)
 }
 
 // JAR manifest configuration
@@ -112,7 +115,8 @@ genEventImpl {
             'src/main/java/org/spongepowered/api/event/world/',
     ]
     excludeSrc = []
-    outputDir = 'src/main/java/'
+    outputDir = 'src/main/java/org/spongepowered/api/event/gen/'
+    outputJar = eventGenJar
     outputFactory = 'org.spongepowered.api.event.SpongeEventFactory'
     outputInterface = 'org.spongepowered.api.event.EventFactory'
     eventImplCreateMethod = 'org.spongepowered.api.Sponge.getEventFactory'
