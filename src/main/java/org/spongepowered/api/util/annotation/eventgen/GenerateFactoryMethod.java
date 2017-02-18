@@ -22,41 +22,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.event.entity.living.humanoid;
-
-import org.spongepowered.api.event.Cancellable;
-import org.spongepowered.api.event.entity.living.humanoid.player.TargetPlayerEvent;
-import org.spongepowered.api.util.annotation.eventgen.GenerateFactoryMethod;
+package org.spongepowered.api.util.annotation.eventgen;
 
 /**
- * Called when a human's level is changed.
+ * Explicitly enables generation of an event factory method for an event class.
+ *
+ * <p>By default, an event which contains subinterfaces will not have
+ * an event factory method generated.</p>
  */
-@GenerateFactoryMethod
-public interface ChangeLevelEvent extends TargetHumanoidEvent, Cancellable {
+public @interface GenerateFactoryMethod {
 
-    /**
-     * Gets the original level of the human.
-     *
-     * @return The original level of the human
-     */
-    int getOriginalLevel();
-
-    /**
-     * Gets the new level of the human.
-     *
-     * @return The new level of the human
-     */
-    int getLevel();
-
-    /**
-     * Sets the new level of the human.
-     *
-     * <p>Technically, this can be set to the same level to
-     * cancel effects of the level being changed.</p>
-     *
-     * @param level The new level to change to
-     */
-    void setLevel(int level);
-
-    interface TargetPlayer extends ChangeLevelEvent, TargetPlayerEvent {}
 }

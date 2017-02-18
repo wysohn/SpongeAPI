@@ -22,4 +22,38 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-@org.spongepowered.api.util.annotation.NonnullByDefault package org.spongepowered.api.util.annotation;
+package org.spongepowered.api.util.annotation.eventgen;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * Used to indicate the base class that a generated event class extends from.
+ */
+@Inherited
+@Target(ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ImplementedBy {
+
+    /**
+     * Gets the class which serves as the base class which the generated class for this
+     * event interface will extend.
+     *
+     * @return The base class to use
+     */
+    Class<?> value();
+
+    /**
+     * Gets the priority for this annotaion, relative to other annotations in the same
+     * hierarchy of the event interface
+     *
+     * <p>The annotation with the highest priority will be used.</p>
+     *
+     * @return The priority to use
+     */
+    int priority() default 1;
+
+}

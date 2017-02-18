@@ -22,41 +22,37 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.event.entity.living.humanoid;
+package org.spongepowered.api.util.annotation.eventgen;
 
-import org.spongepowered.api.event.Cancellable;
-import org.spongepowered.api.event.entity.living.humanoid.player.TargetPlayerEvent;
-import org.spongepowered.api.util.annotation.eventgen.GenerateFactoryMethod;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
- * Called when a human's level is changed.
+ * Used to specify the settings used when generating code for a property.
+ *
+ * <p>This annotation should always be placed on the getter method of a property.</p>
  */
-@GenerateFactoryMethod
-public interface ChangeLevelEvent extends TargetHumanoidEvent, Cancellable {
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface PropertySettings {
 
     /**
-     * Gets the original level of the human.
+     * Indicates whether the annotated property is required to be passed in to the generated constructor.
      *
-     * @return The original level of the human
+     * @return Whether the annotated property is required to be passed in to the generated constructor.
      */
-    int getOriginalLevel();
+    boolean requiredParameter() default true;
 
     /**
-     * Gets the new level of the human.
+     * Indicates whether the annotated property should have methods generated for it.
      *
-     * @return The new level of the human
+     * <p>If this value is set to <code>true</code>, {@link #requiredParameter()} can
+     * only be set to <code>false</code> if the annotated property is a primitive.</p>
+     *
+     * @return Whether the annotated property should have methods generated for it.
      */
-    int getLevel();
+    boolean generateMethods() default true;
 
-    /**
-     * Sets the new level of the human.
-     *
-     * <p>Technically, this can be set to the same level to
-     * cancel effects of the level being changed.</p>
-     *
-     * @param level The new level to change to
-     */
-    void setLevel(int level);
-
-    interface TargetPlayer extends ChangeLevelEvent, TargetPlayerEvent {}
 }

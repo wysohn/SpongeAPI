@@ -22,41 +22,35 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package org.spongepowered.api.event.entity.living.humanoid;
+package org.spongepowered.api.util.annotation.eventgen;
 
-import org.spongepowered.api.event.Cancellable;
-import org.spongepowered.api.event.entity.living.humanoid.player.TargetPlayerEvent;
-import org.spongepowered.api.util.annotation.eventgen.GenerateFactoryMethod;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
- * Called when a human's level is changed.
+ * Used to mark fields which should be used by the class generator.
+ *
+ * <p>The class generator will reference the annotated field when
+ * generating methods, and set it from the constructor arguments</p>
+ *
+ * <p>Any field in an abstract class without this field will not be
+ * set automatically, even if it matches a property from the implemented
+ * event.</p>
  */
-@GenerateFactoryMethod
-public interface ChangeLevelEvent extends TargetHumanoidEvent, Cancellable {
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+public @interface UseField {
 
     /**
-     * Gets the original level of the human.
+     * Indicates whether to use the annotated field directly in the generated 'toString()' method,
+     * rather than calling the normal accessor method.
      *
-     * @return The original level of the human
+     * <p>This should only be used when there are special restrictions on calling the accessor
+     * (for example, AffectEntityEvent#getEntitySnapshots)</p>
+     * @return
      */
-    int getOriginalLevel();
+    boolean overrideToString() default false;
 
-    /**
-     * Gets the new level of the human.
-     *
-     * @return The new level of the human
-     */
-    int getLevel();
-
-    /**
-     * Sets the new level of the human.
-     *
-     * <p>Technically, this can be set to the same level to
-     * cancel effects of the level being changed.</p>
-     *
-     * @param level The new level to change to
-     */
-    void setLevel(int level);
-
-    interface TargetPlayer extends ChangeLevelEvent, TargetPlayerEvent {}
 }

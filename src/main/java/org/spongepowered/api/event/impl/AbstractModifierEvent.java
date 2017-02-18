@@ -31,8 +31,8 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 import org.spongepowered.api.event.entity.DamageEntityEvent;
 import org.spongepowered.api.event.entity.HealEntityEvent;
-import org.spongepowered.api.eventgencore.annotation.UseField;
 import org.spongepowered.api.util.Tuple;
+import org.spongepowered.api.util.annotation.eventgen.UseField;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -50,7 +50,8 @@ public abstract class AbstractModifierEvent<T> extends AbstractEvent {
     protected double originalFinalAmount;
     protected List<Tuple<T, Double>> originalModifiers;
     protected Map<T, Double> originalModifierMap;
-    @UseField protected final LinkedHashMap<T, Double> modifiers = Maps.newLinkedHashMap();
+    @UseField
+    protected final LinkedHashMap<T, Double> modifiers = Maps.newLinkedHashMap();
     protected final List<Tuple<T, Function<? super Double, Double>>> modifierFunctions = new ArrayList<>();
 
     protected ImmutableList<Tuple<T, Function<? super Double, Double>>> init(double originalValue,

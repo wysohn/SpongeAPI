@@ -26,6 +26,7 @@ apply from: 'gradle/sponge.gradle'
 
 // Generate mcmod.info file for project
 apply plugin: 'org.spongepowered.meta'
+apply plugin: 'event-impl-gen'
 
 sourceSets {
     ap {
@@ -67,7 +68,6 @@ dependencies {
 
     // Event generation
     compile 'org.ow2.asm:asm-debug-all:5.0.3'
-    compile 'org.spongepowered:event-gen-core:4.0.0-SNAPSHOT'
 
     compile files(eventGenJar).builtBy(tasks.genEventImpl)
 }
@@ -92,7 +92,6 @@ artifacts {
     archives javadocJar
 }
 
-apply plugin: 'event-impl-gen'
 
 // Compile time code generator for the event factory
 genEventImpl {
@@ -115,10 +114,11 @@ genEventImpl {
             'src/main/java/org/spongepowered/api/event/world/',
     ]
     excludeSrc = []
-    outputDir = 'src/main/java/org/spongepowered/api/event/gen/'
     outputJar = eventGenJar
+    outputPackage = 'org.spongepowered.api.event.gen'
     outputFactory = 'org.spongepowered.api.event.SpongeEventFactory'
-    outputInterface = 'org.spongepowered.api.event.EventFactory'
+    
+
     eventImplCreateMethod = 'org.spongepowered.api.Sponge.getEventFactory'
     sortPriorityPrefix = 'original'
     groupingPrefixes = ['from': 'to']
