@@ -32,7 +32,6 @@ import com.google.common.collect.Maps;
 import org.spongepowered.api.event.entity.DamageEntityEvent;
 import org.spongepowered.api.event.entity.HealEntityEvent;
 import org.spongepowered.api.util.Tuple;
-import org.spongepowered.api.util.annotation.eventgen.UseField;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;

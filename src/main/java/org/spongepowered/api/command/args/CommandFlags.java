@@ -264,35 +264,36 @@ public final class CommandFlags extends CommandElement {
                         element.complete(src, args, context).stream().map(input -> "--" + finalLongFlag + "=" + input).collect(Collectors.toList()));
                 }
             }
-        } else {
-            CommandElement element = this.longFlags.get(longFlag.toLowerCase());
-            if (element == null) {
-                List<String> retStrings = this.longFlags.keySet().stream()
-                    .filter(new StartsWithPredicate(longFlag))
-                    .map(arg -> "--" + arg)
-                    .collect(GuavaCollectors.toImmutableList());
-                if (retStrings.isEmpty() && this.unknownLongFlagBehavior == UnknownFlagBehavior.ACCEPT_VALUE) { // Then we probably have a
-                    // following arg specified, if there's anything
-                    args.nextIfPresent();
-                    return null;
-                }
-                return retStrings;
-            } else {
-                boolean complete = false;
-                Object state = args.getState();
-                try {
-                    element.parse(src, args, context);
-                } catch (ArgumentParseException ex) {
-                    complete = true;
-                }
-                if (!args.hasNext()) {
-                    complete = true;
-                }
-                if (complete) {
-                    args.setState(state);
-                    return element.complete(src, args, context);
-                }
+            return null;
+        }
+        
+        CommandElement element = this.longFlags.get(longFlag.toLowerCase());
+        if (element == null) {
+            List<String> retStrings = this.longFlags.keySet().stream()
+                .filter(new StartsWithPredicate(longFlag))
+                .map(arg -> "--" + arg)
+                .collect(GuavaCollectors.toImmutableList());
+            if (retStrings.isEmpty() && this.unknownLongFlagBehavior == UnknownFlagBehavior.ACCEPT_VALUE) { // Then we probably have a
+                // following arg specified, if there's anything
+                args.nextIfPresent();
+                return null;
             }
+            return retStrings;
+        }
+        
+        boolean complete = false;
+        Object state = args.getState();
+        try {
+            element.parse(src, args, context);
+        } catch (ArgumentParseException ex) {
+            complete = true;
+        }
+        if (!args.hasNext()) {
+            complete = true;
+        }
+        if (complete) {
+            args.setState(state);
+            return element.complete(src, args, context);
         }
         return null;
     }
