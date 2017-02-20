@@ -32,7 +32,7 @@ import org.spongepowered.api.item.inventory.Inventory;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the "cooldown" information for
+ * A {@link DataManipulator} handling the "cooldown" information for
  * a {@link Hopper}. While a {@link Hopper} is on "cooldown" no
  * {@link ItemStack}s are "transferred" between {@link Inventory} instances.
  */

@@ -32,7 +32,7 @@ import org.spongepowered.api.item.inventory.ItemStack;
 import org.spongepowered.api.item.inventory.ItemStackSnapshot;
 
 /**
- * An {@link DataManipulator} handling the representation of an
+ * A {@link DataManipulator} handling the representation of an
  * {@link ItemStack}. The {@link ItemStack} may be "displayed" or simply
  * used as a "model" for various reasons. Usually applies to
  * {@link ItemFrame}s.

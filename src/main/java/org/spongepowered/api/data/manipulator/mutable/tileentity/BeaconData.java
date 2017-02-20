@@ -34,7 +34,7 @@ import org.spongepowered.api.entity.Entity;
 import java.util.Optional;
 
 /**
- * An {@link DataManipulator} handling the data for a {@link Beacon},
+ * A {@link DataManipulator} handling the data for a {@link Beacon},
  * usually applicable to the {@link PotionEffectType}s being applied to
  * {@link Entity} instances in the region around the {@link Beacon}.
  */

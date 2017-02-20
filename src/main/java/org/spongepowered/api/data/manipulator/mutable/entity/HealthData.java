@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.living.Living;
 
 /**
- * An {@link DataManipulator} containing health specific information
+ * A {@link DataManipulator} containing health specific information
  * for a {@link Living} entity. Usually just signifying that an {@link Entity}
  * has "health" and can "die" once the health is depleted.
  */

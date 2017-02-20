@@ -31,7 +31,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutableRedstoneP
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 
 /**
- * An {@link DataManipulator} for the current output of "redstone power". The
+ * A {@link DataManipulator} for the current output of "redstone power". The
  * mechanics of this and a {@link BlockState} is that the  {@link BlockState}
  * must support defining the current "redstone power output" such that blocks
  * nearby may become affected. Usually applicable to

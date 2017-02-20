@@ -28,6 +28,8 @@ import org.spongepowered.api.util.generator.dummy.DummyObjectProvider;
 
 /**
  * An enumeration of known vanilla {@link SkeletonType}s.
+ * 
+ * @deprecated Now represented by separate entity types for the variants
  */
 @Deprecated
 public final class SkeletonTypes {

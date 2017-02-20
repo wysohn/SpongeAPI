@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.StairShape;
 
 /**
- * An {@link VariantData} for the {@link StairShape}. Usually
+ * A {@link VariantData} for the {@link StairShape}. Usually
  * applicable to {@link BlockTypes#OAK_STAIRS} etc.
  */
 public interface StairShapeData extends VariantData<StairShape, StairShapeData, ImmutableStairShapeData> {

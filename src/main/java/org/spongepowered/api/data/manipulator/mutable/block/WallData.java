@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.WallType;
 
 /**
- * An {@link VariantData} for the {@link WallType}. Usually applicable to
+ * A {@link VariantData} for the {@link WallType}. Usually applicable to
  * {@link BlockTypes#COBBLESTONE_WALL}.
  */
 public interface WallData extends VariantData<WallType, WallData, ImmutableWallData> {

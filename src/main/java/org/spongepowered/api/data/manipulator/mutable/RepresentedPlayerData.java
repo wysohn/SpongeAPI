@@ -34,7 +34,7 @@ import org.spongepowered.api.item.inventory.ItemStack;
 import org.spongepowered.api.profile.GameProfile;
 
 /**
- * An {@link DataManipulator} handling the {@link GameProfile}
+ * A {@link DataManipulator} handling the {@link GameProfile}
  * represented by this {@link DataHolder}. Applicable to a {@link Skull}
  * {@link TileEntity} or {@link ItemStack}.
  */

@@ -31,7 +31,7 @@ import org.spongepowered.api.data.type.NotePitch;
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * An {@link DataManipulator} handling the {@link NotePitch} for a
+ * A {@link DataManipulator} handling the {@link NotePitch} for a
  * {@link Note}.
  */
 public interface NoteData extends DataManipulator<NoteData, ImmutableNoteData> {

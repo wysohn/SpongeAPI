@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.statistic.Statistic;
 
 /**
- * An {@link DataManipulator} handling all {@link Statistic}al information for
+ * A {@link DataManipulator} handling all {@link Statistic}al information for
  * a {@link Player}.
  */
 public interface StatisticData extends MappedData<Statistic, Long, StatisticData, ImmutableStatisticData> {

@@ -64,7 +64,7 @@ public interface Recipe {
     boolean isValid(GridInventory grid);
 
     /**
-     * Returns the results for running this Recipe over an {@link GridInventory}
+     * Returns the results for running this Recipe over a {@link GridInventory}
      *
      * @param grid An ItemGrid as input
      * @return A list of ItemStacks or {@link Optional#empty()} if the given

@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.living.Humanoid;
 
 /**
- * An {@link DataManipulator} for the "flying" state of an {@link Entity}. This
+ * A {@link DataManipulator} for the "flying" state of an {@link Entity}. This
  * is usually marking that an entity is capable of flying unobtrusively in the
  * air. Usually applicable to a {@link Humanoid} while able to fly.
  */

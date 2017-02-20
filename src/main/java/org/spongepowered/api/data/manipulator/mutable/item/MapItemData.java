@@ -30,7 +30,7 @@ import org.spongepowered.api.item.ItemTypes;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * Represents an {@link DataManipulator} hosting the specific map
+ * Represents a {@link DataManipulator} hosting the specific map
  * information of an {@link ItemStack} of the type {@link ItemTypes#FILLED_MAP}.
  * // TODO for modwizcode
  */

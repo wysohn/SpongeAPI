@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.projectile.Firework;
 import org.spongepowered.api.item.ItemTypes;
 
 /**
- * An {@link DataManipulator} representing the flight modifier of a
+ * A {@link DataManipulator} representing the flight modifier of a
  * {@link Firework} or {@link ItemTypes#FIREWORKS} item.
  */
 public interface FireworkRocketData extends DataManipulator<FireworkRocketData, ImmutableFireworkRocketData> {

@@ -29,7 +29,7 @@ import org.spongepowered.api.event.Cancellable;
 import org.spongepowered.api.event.Event;
 
 /**
- * An event that is associated with an {@link RconSource}.
+ * An event that is associated with a {@link RconSource}.
  */
 public interface RconConnectionEvent extends Event {
 

@@ -29,10 +29,9 @@ import org.spongepowered.api.event.entity.living.humanoid.HandInteractEvent;
 import org.spongepowered.api.item.inventory.ItemStackSnapshot;
 
 /**
- * Base event for all interactions with an @{link ItemStack} in hand.
+ * Base event for all interactions with an {@link ItemStack} in hand.
  * 
- * <p>Note: Canceling this event will halt any future actions from
- * occuring.</p>
+ * <p>Note: Canceling this event will halt any future actions from occuring.</p>
  */
 public interface InteractItemEvent extends InteractEvent {
 
@@ -46,12 +45,15 @@ public interface InteractItemEvent extends InteractEvent {
     interface Primary extends InteractItemEvent, HandInteractEvent { 
 
         /**
-         * A {@link Primary} event where the interaction is from the client's main hand.
+         * A {@link Primary} event where the interaction is from the client's
+         * main hand.
          */
-        interface MainHand extends Primary {}
+        interface MainHand extends Primary {
+        }
 
         /**
-         * A {@link Primary} event where the interaction is from the client's off hand.
+         * A {@link Primary} event where the interaction is from the client's
+         * off hand.
          */
         interface OffHand extends Primary {}
     }
@@ -59,13 +61,17 @@ public interface InteractItemEvent extends InteractEvent {
     interface Secondary extends InteractItemEvent, HandInteractEvent {
 
         /**
-         * A {@link Secondary} event where the interaction is from the client's main hand.
+         * A {@link Secondary} event where the interaction is from the client's
+         * main hand.
          */
-        interface MainHand extends Secondary {}
+        interface MainHand extends Secondary {
+        }
 
         /**
-         * A {@link Secondary} event where the interaction is from the client's off hand.
+         * A {@link Secondary} event where the interaction is from the client's
+         * off hand.
          */
-        interface OffHand extends Secondary {}
+        interface OffHand extends Secondary {
+        }
     }
 }

@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.immutable.tileentity.ImmutableBrew
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 
 /**
- * An {@link DataManipulator} handling the {@link BrewingStand}
+ * A {@link DataManipulator} handling the {@link BrewingStand}
  * information, such as the remaining brew time.
  */
 public interface BrewingStandData extends DataManipulator<BrewingStandData, ImmutableBrewingStandData> {

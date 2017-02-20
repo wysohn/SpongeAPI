@@ -31,7 +31,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the "locking" information for a
+ * A {@link DataManipulator} handling the "locking" information for a
  * {@link TileEntityCarrier} that can be "locked" such that it can only be
  * interacted with if the "lock" has a matching {@link ItemStack} of the same
  * name.

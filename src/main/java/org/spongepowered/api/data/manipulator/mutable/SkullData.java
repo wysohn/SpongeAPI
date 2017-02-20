@@ -31,7 +31,7 @@ import org.spongepowered.api.item.ItemTypes;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link VariantData} specializing in the {@link SkullType}
+ * A {@link VariantData} specializing in the {@link SkullType}
  * represented by a {@link Skull} or {@link ItemStack} of the type
  * {@link ItemTypes#SKULL}.
  */

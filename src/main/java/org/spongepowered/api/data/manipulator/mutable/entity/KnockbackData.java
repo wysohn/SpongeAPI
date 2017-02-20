@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.projectile.arrow.Arrow;
 
 /**
- * An {@link DataManipulator} for the "knockback" strength for an
+ * A {@link DataManipulator} for the "knockback" strength for an
  * {@link Entity}'s next attack. Usually applicable to {@link Arrow}s, the
  * level of "knockback" such that the higher the knockback, the further the
  * attacked {@link Entity} will be "knocked back".

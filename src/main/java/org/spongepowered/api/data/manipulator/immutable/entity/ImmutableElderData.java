@@ -32,8 +32,10 @@ import org.spongepowered.api.entity.living.monster.Guardian;
 /**
  * An {@link ImmutableDataManipulator} for marking the "elder" state of a
  * {@link Guardian}. Usually, if a {@link Guardian} is an "elder", it will have
- * a higher amount of health, deal more damage, and have a variance in the
- * items dropped when killed.
+ * a higher amount of health, deal more damage, and have a variance in the items
+ * dropped when killed.
+ * 
+ * @deprecated Now represented by a separate entity type for elder guardians.
  */
 @Deprecated
 public interface ImmutableElderData extends ImmutableDataManipulator<ImmutableElderData, ElderData> {

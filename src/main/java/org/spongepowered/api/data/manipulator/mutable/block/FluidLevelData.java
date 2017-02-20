@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutableFluidLeve
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 
 /**
- * An {@link DataManipulator} for the "fluid level" state. Usually, the
+ * A {@link DataManipulator} for the "fluid level" state. Usually, the
  * {@link #level()} value remains such that at {@code 0}, the "fluid level" is
  * the equivalent of being "dried out". Usually, this state applies to
  * {@link BlockTypes#WATER}, {@link BlockTypes#LAVA}, and

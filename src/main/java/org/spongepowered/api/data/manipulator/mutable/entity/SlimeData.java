@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 import org.spongepowered.api.entity.living.monster.Slime;
 
 /**
- * An {@link DataManipulator} handling the "size" of a {@link Slime}. Depending
+ * A {@link DataManipulator} handling the "size" of a {@link Slime}. Depending
  * on the "size" of the {@link Slime}, it may have more health, deal more
  * damage, and appear larger in size.
  */

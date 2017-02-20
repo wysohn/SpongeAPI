@@ -322,8 +322,20 @@ public final class Location<E extends Extent> implements DataHolder {
      *
      * @param extent The new extent
      * @return A new instance
+     * @deprecated Use {@link #withExtent(Extent)} instead
      */
+    @Deprecated
     public Location<E> setExtent(E extent) {
+        return withExtent(extent);
+    }
+
+    /**
+     * Create a new instance with a new extent.
+     *
+     * @param extent The new extent
+     * @return A new instance
+     */
+    public Location<E> withExtent(E extent) {
         checkNotNull(extent, "extent");
         if (extent == getExtent()) {
             return this;
@@ -336,8 +348,24 @@ public final class Location<E extends Extent> implements DataHolder {
      *
      * @param position The new position
      * @return A new instance
+     * @deprecated Use {@link #withPosition(Vector3d)} instead
      */
+    @Deprecated
     public Location<E> setPosition(Vector3d position) {
+        checkNotNull(position, "position");
+        if (position == getPosition()) {
+            return this;
+        }
+        return new Location<>(getExtent(), position);
+    }
+
+    /**
+     * Create a new instance with a new position.
+     *
+     * @param position The new position
+     * @return A new instance
+     */
+    public Location<E> withPosition(Vector3d position) {
         checkNotNull(position, "position");
         if (position == getPosition()) {
             return this;

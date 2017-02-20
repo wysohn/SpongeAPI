@@ -32,7 +32,7 @@ import org.spongepowered.api.item.inventory.Inventory;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} acting as the {@link Carrier} link to
+ * A {@link DataManipulator} acting as the {@link Carrier} link to
  * an {@link Inventory} that can be contained by an {@link ItemStack}.
  * This can specifically apply to any {@link ItemStack}s that are of the type
  * representing a {@link TileEntityCarrier}.

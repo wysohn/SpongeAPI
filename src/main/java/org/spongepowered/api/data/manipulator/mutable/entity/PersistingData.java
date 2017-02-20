@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.entity.Entity;
 
 /**
- * An {@link DataManipulator} that marks the "persisting" state for an
+ * A {@link DataManipulator} that marks the "persisting" state for an
  * {@link Entity}. A persisting entity will not naturally despawn, even if it
  * would otherwise be able to.
  *

@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.Hinge;
 
 /**
- * An {@link VariantData} for a {@link Hinge}. Usually applicable to
+ * A {@link VariantData} for a {@link Hinge}. Usually applicable to
  * {@link BlockTypes#ACACIA_DOOR}, {@link BlockTypes#IRON_DOOR} etc.
  */
 public interface HingeData extends VariantData<Hinge, HingeData, ImmutableHingeData> {

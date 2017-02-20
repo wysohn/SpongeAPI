@@ -30,7 +30,7 @@ import org.spongepowered.api.data.type.RailDirection;
 import org.spongepowered.api.util.Direction;
 
 /**
- * An {@link VariantData} for the {@link RailDirection} of rails. The
+ * A {@link VariantData} for the {@link RailDirection} of rails. The
  * primary difference between a {@link RailDirection} and {@link Direction} is
  * that a {@link RailDirection} can be ascending in the cardinal directions.
  */

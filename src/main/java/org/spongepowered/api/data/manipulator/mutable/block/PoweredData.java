@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutablePoweredDa
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * An {@link DataManipulator} for the "powered" state. For redstone based
+ * A {@link DataManipulator} for the "powered" state. For redstone based
  * mechanics, a "powered on" state will mean the object is currently "powered"
  * and may emit a redstone signal. Usually applicable to
  * {@link BlockTypes#LEVER}, {@link BlockTypes#STONE_BUTTON}, etc.

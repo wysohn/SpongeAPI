@@ -55,7 +55,7 @@ import java.util.function.Predicate;
 public interface AffectEntityEvent extends TargetWorldEvent, Cancellable {
 
     /**
-     * Gets an {@link List} of the entity data
+     * Gets a {@link List} of the entity data
      * un-affected by event changes.
      *
      * <p>This method <b>MUST</b> be called at {@link Order#PRE} in order

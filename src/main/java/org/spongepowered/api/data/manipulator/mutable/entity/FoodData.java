@@ -30,13 +30,13 @@ import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 import org.spongepowered.api.entity.living.Humanoid;
 
 /**
- * An {@link DataManipulator} handling the various aspects of "hunger"
+ * A {@link DataManipulator} handling the various aspects of "hunger"
  * which has various effects on health and speed of {@link Humanoid} entities.
  */
 public interface FoodData extends DataManipulator<FoodData, ImmutableFoodData> {
 
     /**
-     * Gets the current food level as an {@link MutableBoundedValue}.
+     * Gets the current food level as a {@link MutableBoundedValue}.
      *
      * <p>Food level has health effects, depending on game difficulty and
      * hunger levels. If the food level is high enough, the human entity

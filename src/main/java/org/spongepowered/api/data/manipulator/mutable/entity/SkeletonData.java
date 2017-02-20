@@ -30,8 +30,10 @@ import org.spongepowered.api.data.type.SkeletonType;
 import org.spongepowered.api.entity.living.monster.Skeleton;
 
 /**
- * A type of {@link VariantData} for {@link SkeletonType}s belonging
- * to an {@link Skeleton}.
+ * A type of {@link VariantData} for {@link SkeletonType}s belonging to an
+ * {@link Skeleton}.
+ * 
+ * @deprecated Now represented by separate entity types for the variants
  */
 @Deprecated
 public interface SkeletonData extends VariantData<SkeletonType, SkeletonData, ImmutableSkeletonData> {

@@ -58,7 +58,7 @@ public interface DisplaySlot extends CatalogType {
         /**
          * Builds an instance of a {@link DisplaySlot}.
          *
-         * @return A new instance of an {@link DisplaySlot}
+         * @return A new instance of a {@link DisplaySlot}
          * @throws IllegalStateException if the {@link DisplaySlot} is not completed
          */
         DisplaySlot build() throws IllegalStateException;

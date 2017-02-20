@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.living.animal.Rabbit;
 
 /**
  * A type of {@link ImmutableVariantData} for {@link RabbitType}s belonging
- * to an {@link Rabbit}.
+ * to a {@link Rabbit}.
  */
 public interface ImmutableRabbitData extends ImmutableVariantData<RabbitType, ImmutableRabbitData, RabbitData> {
 

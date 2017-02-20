@@ -34,7 +34,7 @@ import org.spongepowered.api.item.merchant.Merchant;
 import org.spongepowered.api.item.merchant.TradeOffer;
 
 /**
- * An {@link DataManipulator} handling the {@link TradeOffer}s that
+ * A {@link DataManipulator} handling the {@link TradeOffer}s that
  * can be offered to {@link Humanoid}s from {@link Merchant}s such as
  * {@link Villager}s.
  */

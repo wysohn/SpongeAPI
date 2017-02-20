@@ -31,7 +31,7 @@ import org.spongepowered.api.item.ItemTypes;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link VariantData} handling the {@link EntityType} that an
+ * A {@link VariantData} handling the {@link EntityType} that an
  * {@link ItemStack} is capable of spawning when used. Usually applicable to
  * {@link ItemStack}s of type {@link ItemTypes#SPAWN_EGG}.
  */

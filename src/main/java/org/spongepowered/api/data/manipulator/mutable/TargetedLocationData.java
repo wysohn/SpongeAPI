@@ -33,7 +33,7 @@ import org.spongepowered.api.entity.projectile.EyeOfEnder;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the a targeted {@link Vector3d}.
+ * A {@link DataManipulator} handling the a targeted {@link Vector3d}.
  *
  * <p>Usually for the case of a {@link EyeOfEnder}, the targeted {@link Vector3d}
  * is where the {@link EyeOfEnder} will move towards until its expiration time.

@@ -35,8 +35,10 @@ import org.spongepowered.api.entity.living.monster.Zombie;
 import java.util.Optional;
 
 /**
- * Represents an {@link DataManipulator} handling the type and
- * profession of a {@link Zombie}.
+ * Represents a {@link DataManipulator} handling the type and profession of a
+ * {@link Zombie}.
+ * 
+ * @deprecated Now represented by separate entity types for the variants
  */
 @Deprecated
 public interface ZombieData extends DataManipulator<ZombieData, ImmutableZombieData> {

@@ -29,7 +29,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutableDelayable
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 
 /**
- * An {@link DataManipulator} that represents the delay on a redstone repeater.
+ * A {@link DataManipulator} that represents the delay on a redstone repeater.
  */
 public interface DelayableData extends DataManipulator<DelayableData, ImmutableDelayableData> {
 

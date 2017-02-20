@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.SandType;
 
 /**
- * An {@link VariantData} for the {@link SandType}. Usually applicable to
+ * A {@link VariantData} for the {@link SandType}. Usually applicable to
  * {@link BlockTypes#SAND}.
  */
 public interface SandData extends VariantData<SandType, SandData, ImmutableSandData> {

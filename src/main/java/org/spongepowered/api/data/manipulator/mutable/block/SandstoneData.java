@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.SandstoneType;
 
 /**
- * An {@link VariantData} for the {@link SandstoneType}. Usually
+ * A {@link VariantData} for the {@link SandstoneType}. Usually
  * applicable to {@link BlockTypes#SANDSTONE} and
  * {@link BlockTypes#RED_SANDSTONE}.
  */

@@ -30,7 +30,7 @@ import org.spongepowered.api.entity.hanging.ItemFrame;
 import org.spongepowered.api.util.rotation.Rotation;
 
 /**
- * An {@link VariantData} handling the {@link Rotation} of a
+ * A {@link VariantData} handling the {@link Rotation} of a
  * {@link DataHolder}. It can be associated with blocks, or {@link ItemFrame}s.
  */
 public interface RotationalData extends VariantData<Rotation, RotationalData, ImmutableRotationalData> {

@@ -29,13 +29,12 @@ import org.spongepowered.api.entity.living.monster.Zombie;
 import org.spongepowered.api.util.annotation.CatalogedBy;
 
 /**
- * <p>
- *     Represents the type of a {@link Zombie}.
- * </p>
- * <p>
- *     Note that zombies with {@link ZombieTypes#VILLAGER} must also have an
- *     associated {@link Profession}.
- * </p>
+ * Represents the type of a {@link Zombie}.
+ * 
+ * <p> Note that zombies with {@link ZombieTypes#VILLAGER} must also have an
+ * associated {@link Profession}. </p>
+ * 
+ * @deprecated Now represented by separate entity types for the variants
  */
 @Deprecated
 @CatalogedBy(ZombieTypes.class)

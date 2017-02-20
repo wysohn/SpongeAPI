@@ -48,7 +48,6 @@ import java.util.Set;
 
 public class MemoryDataTest {
 
-    @SuppressWarnings("unused")
     @Test
     public void testCreateDataView() {
         new MemoryDataContainer();
@@ -107,7 +106,7 @@ public class MemoryDataTest {
             list.add(new SimpleData(i, 0.1 * i, "i", Lists.asList(number, new String[] {" foo", "bar"})));
         }
         container.set(of("SimpleData"), list);
-        String containerString = container.toString();
+        container.toString();
     }
 
     @Test
@@ -407,7 +406,7 @@ public class MemoryDataTest {
         main.set(DataQuery.of("SINGLE"), ImmutableList.of(data2));
         main.set(DataQuery.of("SUB"), values);
 
-        Map<?, ?> map = main.getMap(of()).get();
+        main.getMap(of()).get();
     }
 
 }

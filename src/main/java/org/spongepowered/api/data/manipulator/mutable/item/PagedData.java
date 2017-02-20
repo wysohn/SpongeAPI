@@ -35,7 +35,7 @@ import org.spongepowered.api.text.Text;
 import java.util.List;
 
 /**
- * An {@link DataManipulator} handling the {@link List} of pages of
+ * A {@link DataManipulator} handling the {@link List} of pages of
  * {@link Text} for an {@link ItemStack} of type {@link ItemTypes#WRITABLE_BOOK}
  * such that the text elements are single pages.
  */

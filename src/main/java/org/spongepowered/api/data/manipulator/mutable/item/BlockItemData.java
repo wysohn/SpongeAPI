@@ -32,7 +32,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the {@link BlockState}
+ * A {@link DataManipulator} handling the {@link BlockState}
  * information for an {@link ItemStack} that is representing a
  * {@link BlockType}. Since the {@link BlockState} itself stores information
  * related to the actual block information, not all information can be

@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.entity.Entity;
 
 /**
- * An {@link DataManipulator} handling the "sneaking" state of
+ * A {@link DataManipulator} handling the "sneaking" state of
  * an {@link Entity}. Usually, when "sneaking", the {@link Entity} will appear
  * to move slower and cause no "walking sounds".
  */

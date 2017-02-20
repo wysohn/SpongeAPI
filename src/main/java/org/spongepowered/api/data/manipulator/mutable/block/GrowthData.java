@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutableGrowthDat
 import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 
 /**
- * An {@link DataManipulator} that tracks the "growth" stage. Usually
+ * A {@link DataManipulator} that tracks the "growth" stage. Usually
  * applicable to {@link BlockTypes#WHEAT}, {@link BlockTypes#PUMPKIN_STEM}, etc.
  * The {@code growth} state is generalized such that at the highest "state",
  * the growth will cease and the owner would be "ready" for harvesting.

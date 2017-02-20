@@ -135,6 +135,10 @@ public final class EntityTypes {
 
     public static final EntityType PIG = DummyObjectProvider.createFor(EntityType.class, "PIG");
 
+    /**
+     * @deprecated Use {@link #ZOMBIE_PIGMAN} instead
+     */
+    @Deprecated
     public static final EntityType PIG_ZOMBIE = DummyObjectProvider.createFor(EntityType.class, "PIG_ZOMBIE");
 
     public static final EntityType PLAYER = DummyObjectProvider.createFor(EntityType.class, "PLAYER");
@@ -206,6 +210,8 @@ public final class EntityTypes {
     public static final EntityType ZOMBIE = DummyObjectProvider.createFor(EntityType.class, "ZOMBIE");
 
     public static final EntityType ZOMBIE_HORSE = DummyObjectProvider.createFor(EntityType.class, "ZOMBIE_HORSE");
+
+    public static final EntityType ZOMBIE_PIGMAN = DummyObjectProvider.createFor(EntityType.class, "ZOMBIE_PIGMAN");
 
     public static final EntityType ZOMBIE_VILLAGER = DummyObjectProvider.createFor(EntityType.class, "ZOMBIE_VILLAGER");
 

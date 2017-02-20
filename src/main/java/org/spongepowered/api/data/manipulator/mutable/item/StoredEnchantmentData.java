@@ -33,7 +33,7 @@ import org.spongepowered.api.item.ItemTypes;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling "stored" {@link ItemEnchantment}s.
+ * A {@link DataManipulator} handling "stored" {@link ItemEnchantment}s.
  * Usually, stored {@link ItemEnchantment}s can be "transferred" to other
  * {@link ItemStack}s. Examples include {@link ItemTypes#ENCHANTED_BOOK}s
  * storing enchantments to apply to weapons.

@@ -31,7 +31,7 @@ import org.spongepowered.api.data.type.LogAxes;
 import org.spongepowered.api.data.type.LogAxis;
 
 /**
- * An {@link VariantData} for the {@link LogAxis}. Usually applies to all types
+ * A {@link VariantData} for the {@link LogAxis}. Usually applies to all types
  * of {@link BlockTypes#LOG}. This is fundamentally different from
  * {@link AxisData} due to the fact that a log can have a {@link LogAxes#NONE}.
  */

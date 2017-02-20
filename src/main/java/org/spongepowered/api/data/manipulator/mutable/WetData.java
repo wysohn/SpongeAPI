@@ -32,7 +32,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.entity.living.animal.Wolf;
 
 /**
- * An {@link DataManipulator} that handles the "wet" state of various
+ * A {@link DataManipulator} that handles the "wet" state of various
  * {@link DataHolder}s that can include {@link BlockTypes#SPONGE} blocks to
  * {@link Wolf} entities being "wet".
  */

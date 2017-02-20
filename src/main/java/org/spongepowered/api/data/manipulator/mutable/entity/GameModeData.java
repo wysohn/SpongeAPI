@@ -30,7 +30,7 @@ import org.spongepowered.api.entity.living.Humanoid;
 import org.spongepowered.api.entity.living.player.gamemode.GameMode;
 
 /**
- * An {@link VariantData} for the current {@link GameMode} of a
+ * A {@link VariantData} for the current {@link GameMode} of a
  * {@link Humanoid} entity.
  */
 public interface GameModeData extends VariantData<GameMode, GameModeData, ImmutableGameModeData> {

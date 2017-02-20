@@ -30,10 +30,11 @@ import org.spongepowered.api.text.translation.Translatable;
 import org.spongepowered.api.util.annotation.CatalogedBy;
 
 /**
- * Represents the variant of a {@link RideableHorse}.
- * <p>The variant of a horse defines the various behaviors the horse can have.
- * Some behaviors limit whether a horse can be chested, wear horse armor, or
- * can be saddled.</p>
+ * Represents the variant of a {@link RideableHorse}. <p>The variant of a horse
+ * defines the various behaviors the horse can have. Some behaviors limit
+ * whether a horse can be chested, wear horse armor, or can be saddled.</p>
+ * 
+ * @deprecated Now represented by separate entity types for the variants
  */
 @Deprecated
 @CatalogedBy(HorseVariants.class)

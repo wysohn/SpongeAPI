@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutableSnowedDat
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * An {@link DataManipulator} for handling the "snowed" state. Usually
+ * A {@link DataManipulator} for handling the "snowed" state. Usually
  * applicable to {@link BlockTypes#DIRT}, and {@link BlockTypes#GRASS}.
  */
 public interface SnowedData extends DataManipulator<SnowedData, ImmutableSnowedData> {

@@ -56,4 +56,8 @@ public abstract class AbstractImmutableBooleanData<I extends ImmutableDataManipu
         return this.immutableValue;
     }
 
+    protected boolean getDefaultValue() {
+        return this.defaultValue;
+    }
+
 }

@@ -33,7 +33,7 @@ import org.spongepowered.api.data.value.mutable.PatternListValue;
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * An {@link DataManipulator} handling the various information for a
+ * A {@link DataManipulator} handling the various information for a
  * {@link Banner} including the {@link PatternLayer}s that customize the
  * {@link Banner}.
  */

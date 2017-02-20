@@ -30,7 +30,7 @@ import org.spongepowered.api.data.type.Art;
 import org.spongepowered.api.entity.hanging.Painting;
 
 /**
- * An {@link VariantData} for the {@link Art} type. Usually applicable to
+ * A {@link VariantData} for the {@link Art} type. Usually applicable to
  * {@link Painting}s.
  */
 public interface ArtData extends VariantData<Art, ArtData, ImmutableArtData> {

@@ -400,7 +400,7 @@ public final class Cause {
     }
 
     /**
-     * Gets an {@link List} of all causes within this {@link Cause}.
+     * Gets a {@link List} of all causes within this {@link Cause}.
      *
      * @return An immutable list of all the causes
      */

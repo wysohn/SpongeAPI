@@ -32,7 +32,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the "durability" of an {@link ItemStack}
+ * A {@link DataManipulator} handling the "durability" of an {@link ItemStack}
  * that will "break" after a certain amount of "uses".
  *
  * <p>Usually, items with durability will break and disappear when their

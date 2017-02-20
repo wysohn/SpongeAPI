@@ -109,14 +109,15 @@ public enum Order {
     LAST,
 
     /**
-     * The order point of BEFORE_POST handles preparation for things needing
-     * to be done in post BEFORE_POST is read only but can cancel events.
+     * The order point of BEFORE_POST handles preparation for things needing to
+     * be done in post BEFORE_POST is read only and cannot cancel events.
      */
     BEFORE_POST,
 
     /**
      * The order point of POST handles last minute things and monitoring of
-     * events for rollback or logging POST is read only but can cancel events.
+     * events for rollback or logging POST is read only and cannot cancel
+     * events.
      */
     POST
 

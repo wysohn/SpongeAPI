@@ -1123,6 +1123,10 @@ public final class Keys {
 
     public static final Key<Value<WireAttachmentType>> WIRE_ATTACHMENT_WEST = KeyFactory.fake("WIRE_ATTACHMENT_WEST");
 
+    /**
+     * @deprecated Now represented by seperate entity types.
+     */
+    @Deprecated
     public static final Key<Value<ZombieType>> ZOMBIE_TYPE = KeyFactory.fake("ZOMBIE_TYPE");
 
     // SORTFIELDS:OFF

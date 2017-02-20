@@ -64,7 +64,7 @@ public interface HealEntityEvent extends TargetEntityEvent, Cancellable {
     double getOriginalFinalHealAmount();
 
     /**
-     * Gets an {@link Map} of all original {@link HealthModifier}s
+     * Gets a {@link Map} of all original {@link HealthModifier}s
      * and their associated "modified" heal amount. Note that ordering is not
      * retained.
      *

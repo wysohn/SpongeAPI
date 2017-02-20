@@ -27,7 +27,7 @@ package org.spongepowered.api.event.item.inventory;
 import org.spongepowered.api.item.inventory.Container;
 
 /**
- * Base event for all events with an {@link Container} as the target.
+ * Base event for all events with a {@link Container} as the target.
  */
 public interface TargetContainerEvent extends TargetInventoryEvent {
     @Override

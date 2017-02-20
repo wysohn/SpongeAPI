@@ -56,7 +56,9 @@ public final class TextSerializers {
      * instead.</p>
      *
      * @see FormattingCodeTextSerializer
-     * @deprecated Legacy formatting codes are being phased out of Minecraft
+     * @deprecated Legacy formatting codes are being phased out of Minecraft.
+     *             The {@link #FORMATTING_CODE} serializer is recommended
+     *             instead for similar functionality.
      */
     @Deprecated
     public static final FormattingCodeTextSerializer LEGACY_FORMATTING_CODE = DummyObjectProvider

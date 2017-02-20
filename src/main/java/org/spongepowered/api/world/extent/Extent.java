@@ -108,7 +108,7 @@ public interface Extent extends EntityUniverse, TileEntityVolume, InteractableVo
     /**
      * Sets the block at the given position in the world with the provided
      * {@link Cause} will be used for any events thrown. Note that the
-     * difference between this an {@link MutableBlockVolume#setBlock(Vector3i, BlockState, Cause)} is
+     * difference between this a {@link MutableBlockVolume#setBlock(Vector3i, BlockState, Cause)} is
      * that no block tracking chaining will take place. Note that there is
      * a requirement that the {@link PluginContainer} of the plugin calling
      * this method is <strong>REQUIRED</strong>.
@@ -128,7 +128,7 @@ public interface Extent extends EntityUniverse, TileEntityVolume, InteractableVo
     /**
      * Sets the block at the given position in the world with the provided
      * {@link Cause} will be used for any events thrown. Note that the
-     * difference between this an {@link MutableBlockVolume#setBlock(Vector3i, BlockState, Cause)} is
+     * difference between this a {@link MutableBlockVolume#setBlock(Vector3i, BlockState, Cause)} is
      * that no block tracking chaining will take place. Note that there is
      * a requirement that the {@link PluginContainer} of the plugin calling
      * this method is <strong>REQUIRED</strong>.
@@ -148,7 +148,7 @@ public interface Extent extends EntityUniverse, TileEntityVolume, InteractableVo
     /**
      * Sets the block at the given position in the world with the provided
      * {@link Cause} will be used for any events thrown. Note that the
-     * difference between this an {@link MutableBlockVolume#setBlockType(Vector3i, BlockType, Cause)} is
+     * difference between this a {@link MutableBlockVolume#setBlockType(Vector3i, BlockType, Cause)} is
      * that no block tracking chaining will take place. Note that there is
      * a requirement that the {@link PluginContainer} of the plugin calling
      * this method is <strong>REQUIRED</strong>.
@@ -168,7 +168,7 @@ public interface Extent extends EntityUniverse, TileEntityVolume, InteractableVo
     /**
      * Sets the block at the given position in the world with the provided
      * {@link Cause} will be used for any events thrown. Note that the
-     * difference between this an {@link MutableBlockVolume#setBlockType(Vector3i, BlockType, Cause)} is
+     * difference between this a {@link MutableBlockVolume#setBlockType(Vector3i, BlockType, Cause)} is
      * that no block tracking chaining will take place. Note that there is
      * a requirement that the {@link PluginContainer} of the plugin calling
      * this method is <strong>REQUIRED</strong>.

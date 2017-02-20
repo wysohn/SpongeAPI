@@ -49,7 +49,6 @@ import org.spongepowered.api.data.manipulator.mutable.entity.CriticalHitData;
 import org.spongepowered.api.data.manipulator.mutable.entity.DamageableData;
 import org.spongepowered.api.data.manipulator.mutable.entity.DamagingData;
 import org.spongepowered.api.data.manipulator.mutable.entity.DominantHandData;
-import org.spongepowered.api.data.manipulator.mutable.entity.ElderData;
 import org.spongepowered.api.data.manipulator.mutable.entity.ExpOrbData;
 import org.spongepowered.api.data.manipulator.mutable.entity.ExperienceHolderData;
 import org.spongepowered.api.data.manipulator.mutable.entity.ExpirableData;
@@ -84,7 +83,6 @@ import org.spongepowered.api.data.manipulator.mutable.entity.ShearedData;
 import org.spongepowered.api.data.manipulator.mutable.entity.SilentData;
 import org.spongepowered.api.data.manipulator.mutable.entity.SittingData;
 import org.spongepowered.api.data.manipulator.mutable.entity.SizeData;
-import org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData;
 import org.spongepowered.api.data.manipulator.mutable.entity.SleepingData;
 import org.spongepowered.api.data.manipulator.mutable.entity.SlimeData;
 import org.spongepowered.api.data.manipulator.mutable.entity.SneakingData;
@@ -92,16 +90,13 @@ import org.spongepowered.api.data.manipulator.mutable.entity.StatisticData;
 import org.spongepowered.api.data.manipulator.mutable.entity.TameableData;
 import org.spongepowered.api.data.manipulator.mutable.entity.VehicleData;
 import org.spongepowered.api.data.manipulator.mutable.entity.VelocityData;
-import org.spongepowered.api.data.manipulator.mutable.entity.ZombieData;
 import org.spongepowered.api.data.type.Art;
 import org.spongepowered.api.data.type.DyeColor;
 import org.spongepowered.api.data.type.HandPreference;
 import org.spongepowered.api.data.type.HorseColor;
 import org.spongepowered.api.data.type.HorseStyle;
-import org.spongepowered.api.data.type.HorseVariant;
 import org.spongepowered.api.data.type.OcelotType;
 import org.spongepowered.api.data.type.RabbitType;
-import org.spongepowered.api.data.type.SkeletonType;
 import org.spongepowered.api.effect.potion.PotionEffect;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.ExperienceOrb;
@@ -251,7 +246,9 @@ public final class CatalogEntityData {
      * Signifies that an entity is considered an "elder". Usually applies to
      * {@link Guardian}s.
      */
-    public static final Class<ElderData> ELDER_DATA = ElderData.class;
+    @Deprecated
+    public static final Class<org.spongepowered.api.data.manipulator.mutable.entity.ElderData> ELDER_DATA =
+            org.spongepowered.api.data.manipulator.mutable.entity.ElderData.class;
     /**
      * Signifies that an entity can hold "experience". Usually applies to
      * {@link Player}s.
@@ -448,7 +445,9 @@ public final class CatalogEntityData {
     /**
      * Represents the {@link SkeletonType} of a {@link Skeleton}.
      */
-    public static final Class<SkeletonData> SKELETON_DATA = SkeletonData.class;
+    @Deprecated
+    public static final Class<org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData> SKELETON_DATA =
+            org.spongepowered.api.data.manipulator.mutable.entity.SkeletonData.class;
     /**
      * Signifies that the owner is currently "sleeping". This will usually
      * apply to {@link Humanoid}s and {@link Bat}s.
@@ -489,7 +488,9 @@ public final class CatalogEntityData {
      * Specifies the type of a {@link Zombie}, as well as its profession
      * (if it has one).
      */
-    public static final Class<ZombieData> ZOMBIE_DATA = ZombieData.class;
+    @Deprecated
+    public static final Class<org.spongepowered.api.data.manipulator.mutable.entity.ZombieData> ZOMBIE_DATA =
+            org.spongepowered.api.data.manipulator.mutable.entity.ZombieData.class;
     /**
      * Signifies that an entity is currently "wet". Usually applicable to
      * {@link Wolf} entities.

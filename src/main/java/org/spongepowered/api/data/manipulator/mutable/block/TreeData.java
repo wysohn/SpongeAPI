@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.TreeType;
 
 /**
- * An {@link VariantData} for the {@link TreeType}. The main use for this type
+ * A {@link VariantData} for the {@link TreeType}. The main use for this type
  * is for a visual difference in the types of tree related blocks. Usually
  * applicable to {@link BlockTypes#SAPLING}, {@link BlockTypes#PLANKS},
  * {@link BlockTypes#LOG}, etc.

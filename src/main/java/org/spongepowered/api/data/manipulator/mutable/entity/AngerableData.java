@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.MutableBoundedValue;
 import org.spongepowered.api.entity.Entity;
 
 /**
- * An {@link DataManipulator} for representing the "anger" level. If an
+ * A {@link DataManipulator} for representing the "anger" level. If an
  * {@link Entity} can be "angered", usually the {@link Entity} may attack
  * nearby entities until the "anger level" has decreased to {@code 0}.
  */

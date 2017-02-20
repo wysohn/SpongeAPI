@@ -47,9 +47,9 @@ public interface TeamMember {
 
     /**
      * Gets a {@link Text} representing this team member, suitable for adding
-     * to an {@link Team} with {@link Team#addMember(Text)}.
+     * to a {@link Team} with {@link Team#addMember(Text)}.
      *
-     * @return an {@link Text} representing this team member
+     * @return A {@link Text} representing this team member
      */
     Text getTeamRepresentation();
 

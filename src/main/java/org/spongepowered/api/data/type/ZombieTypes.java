@@ -26,6 +26,9 @@ package org.spongepowered.api.data.type;
 
 import org.spongepowered.api.util.generator.dummy.DummyObjectProvider;
 
+/**
+ * @deprecated Now represented by separate entity types for the variants
+ */
 @Deprecated
 public final class ZombieTypes {
 

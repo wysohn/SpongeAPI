@@ -36,7 +36,7 @@ import org.spongepowered.api.text.Text;
 import java.util.Optional;
 
 /**
- * An {@link DataManipulator} handling all related {@link Value}s for command
+ * A {@link DataManipulator} handling all related {@link Value}s for command
  * related {@link DataHolder}s, such as {@link CommandBlock}s and
  * {@link CommandBlockMinecart}s.
  */

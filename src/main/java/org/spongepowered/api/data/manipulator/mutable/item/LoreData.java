@@ -32,7 +32,7 @@ import org.spongepowered.api.item.inventory.ItemStack;
 import org.spongepowered.api.text.Text;
 
 /**
- * An {@link DataManipulator} handling the "lore" that is displayed
+ * A {@link DataManipulator} handling the "lore" that is displayed
  * on a tooltip for an {@link ItemStack}. The lore can be any form of
  * {@link Text} and is not restricted to one formatting.
  */

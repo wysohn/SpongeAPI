@@ -47,7 +47,7 @@ public interface Humanoid extends Living, ProjectileSource, ArmorEquipable, Tame
     }
 
     /**
-     * Gets the current food level as an {@link MutableBoundedValue}.
+     * Gets the current food level as a {@link MutableBoundedValue}.
      *
      * <p>Food level has health effects, depending on game difficulty and
      * hunger levels. If the food level is high enough, the human entity

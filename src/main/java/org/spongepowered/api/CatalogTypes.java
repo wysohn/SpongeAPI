@@ -51,7 +51,6 @@ import org.spongepowered.api.data.type.HandType;
 import org.spongepowered.api.data.type.Hinge;
 import org.spongepowered.api.data.type.HorseColor;
 import org.spongepowered.api.data.type.HorseStyle;
-import org.spongepowered.api.data.type.HorseVariant;
 import org.spongepowered.api.data.type.InstrumentType;
 import org.spongepowered.api.data.type.LlamaVariant;
 import org.spongepowered.api.data.type.LogAxis;
@@ -69,7 +68,6 @@ import org.spongepowered.api.data.type.RailDirection;
 import org.spongepowered.api.data.type.SandType;
 import org.spongepowered.api.data.type.SandstoneType;
 import org.spongepowered.api.data.type.ShrubType;
-import org.spongepowered.api.data.type.SkeletonType;
 import org.spongepowered.api.data.type.SkinPart;
 import org.spongepowered.api.data.type.SkullType;
 import org.spongepowered.api.data.type.SlabType;
@@ -251,7 +249,9 @@ public final class CatalogTypes {
 
     public static final Class<HorseStyle> HORSE_STYLE = HorseStyle.class;
 
-    @Deprecated public static final Class<HorseVariant> HORSE_VARIANT = HorseVariant.class;
+    @Deprecated
+    public static final Class<org.spongepowered.api.data.type.HorseVariant> HORSE_VARIANT =
+            org.spongepowered.api.data.type.HorseVariant.class;
 
     public static final Class<InstrumentType> INSTRUMENT_TYPE = InstrumentType.class;
 
@@ -313,7 +313,9 @@ public final class CatalogTypes {
 
     public static final Class<ShrubType> SHRUB_TYPE = ShrubType.class;
 
-    @Deprecated public static final Class<SkeletonType> SKELETON_TYPE = SkeletonType.class;
+    @Deprecated
+    public static final Class<org.spongepowered.api.data.type.SkeletonType> SKELETON_TYPE =
+            org.spongepowered.api.data.type.SkeletonType.class;
 
     public static final Class<SkinPart> SKIN_PART = SkinPart.class;
 

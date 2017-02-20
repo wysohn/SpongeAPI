@@ -66,7 +66,7 @@ public interface EntitySnapshot extends LocatableSnapshot<EntitySnapshot> {
      * Gets an {@link Optional} containing the {@link UUID} of the
      * {@link Entity} that this {@link EntitySnapshot} is representing. If the
      * {@link Optional} is {@link Optional#empty()}, then this snapshot must
-     * have been created by an {@link Builder} without an {@link Entity} as a
+     * have been created by a {@link Builder} without an {@link Entity} as a
      * source.
      *
      * @return The Optional where the UUID may be present

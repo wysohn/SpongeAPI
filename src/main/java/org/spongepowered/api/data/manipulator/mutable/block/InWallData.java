@@ -31,7 +31,7 @@ import org.spongepowered.api.data.manipulator.immutable.block.ImmutableInWallDat
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * An {@link DataManipulator} for the "in-wall" state. Usually means that a
+ * A {@link DataManipulator} for the "in-wall" state. Usually means that a
  * {@link BlockState} will show up graphically as being "attached" to another
  * block. Usually applies to {@link BlockTypes#FENCE}s and
  * {@link BlockTypes#FENCE_GATE}s.

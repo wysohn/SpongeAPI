@@ -32,7 +32,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.util.Direction;
 
 /**
- * An {@link DataManipulator} for the {@link Direction} state of a
+ * A {@link DataManipulator} for the {@link Direction} state of a
  * {@link BlockState}. Usually applicable for {@link BlockTypes#STANDING_SIGN},
  * {@link BlockTypes#WALL_SIGN}, {@link BlockTypes#WOODEN_DOOR}, etc.
  */

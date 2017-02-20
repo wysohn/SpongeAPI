@@ -39,7 +39,7 @@ import java.util.Optional;
 import java.util.Set;
 
 /**
- * A wrapper around a class marked with an {@link Plugin} annotation to retrieve
+ * A wrapper around a class marked with a {@link Plugin} annotation to retrieve
  * information from the annotation for easier use.
  */
 public interface PluginContainer {

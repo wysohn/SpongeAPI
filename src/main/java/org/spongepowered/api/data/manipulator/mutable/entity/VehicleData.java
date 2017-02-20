@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.entity.EntitySnapshot;
 
 /**
- * An {@link DataManipulator} that handles the current "passenger" if
+ * A {@link DataManipulator} that handles the current "passenger" if
  * the owning {@link Entity} is considered to be a "vehicle" or another
  * {@link Entity} is currently riding the owning {@link Entity}.
  */

@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.DirtType;
 
 /**
- * An {@link VariantData} for the {@link DirtType}. Usually applicable to
+ * A {@link VariantData} for the {@link DirtType}. Usually applicable to
  * {@link BlockTypes#DIRT}.
  */
 public interface DirtData extends VariantData<DirtType, DirtData, ImmutableDirtData> {

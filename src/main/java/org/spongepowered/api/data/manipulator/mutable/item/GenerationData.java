@@ -31,7 +31,7 @@ import org.spongepowered.api.item.ItemTypes;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the "generation" state of an
+ * A {@link DataManipulator} handling the "generation" state of an
  * {@link ItemStack} of the type {@link ItemTypes#WRITTEN_BOOK} such that the
  * book can be copied until a certain generation limit has been reached.
  */

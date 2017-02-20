@@ -37,7 +37,7 @@ import org.spongepowered.api.text.Text;
 import java.util.List;
 
 /**
- * An {@link DataManipulator} handling the {@link List} of
+ * A {@link DataManipulator} handling the {@link List} of
  * {@link Text} showing up on a {@link Sign} to a {@link Player}.
  *
  * <p>In Vanilla, this is always applicable to a {@link Sign}, which

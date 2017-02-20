@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.EntityTypes;
 import org.spongepowered.api.entity.living.monster.Guardian;
 
 /**
- * An {@link DataManipulator} for marking the "elder" state of a
+ * A {@link DataManipulator} for marking the "elder" state of a
  * {@link Guardian}. Usually, if a {@link Guardian} is an "elder", it will have
  * a higher amount of health, deal more damage, and have a variance in the
  * items dropped when killed.

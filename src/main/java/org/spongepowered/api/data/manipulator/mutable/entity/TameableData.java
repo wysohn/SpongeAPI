@@ -35,7 +35,7 @@ import org.spongepowered.api.entity.living.animal.Wolf;
 import java.util.UUID;
 
 /**
- * An {@link DataManipulator} that handles the link to the {@link UUID} of the
+ * A {@link DataManipulator} that handles the link to the {@link UUID} of the
  * {@link Tamer} that has "tamed" an {@link Animal}. Usually {@link Animal}s
  * can not be tamed, however, certain few can. Such as {@link Wolf} and
  * {@link Ocelot}s.

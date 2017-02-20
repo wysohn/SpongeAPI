@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.projectile.EnderPearl;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} representing the "shattering" state of an
+ * A {@link DataManipulator} representing the "shattering" state of an
  * {@link EnderPearl}. Usually, if an {@link EnderPearl} will "shatter" at
  * the end of it's travel duration such that no {@link ItemStack} will drop.
  */

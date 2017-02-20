@@ -31,7 +31,7 @@ import org.spongepowered.api.event.entity.SpawnEntityEvent;
 import org.spongepowered.api.util.ResettableBuilder;
 
 /**
- * Represents a specific cause for an {@link SpawnEntityEvent} such that
+ * Represents a specific cause for a {@link SpawnEntityEvent} such that
  * the cause has more information relevant to the "reason" for an entity spawn,
  * such as {@link MobSpawnerSpawnCause} linking to the {@link MobSpawnerData}
  * related to spawning the {@link Entity}.

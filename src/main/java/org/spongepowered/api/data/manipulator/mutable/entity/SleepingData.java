@@ -31,7 +31,7 @@ import org.spongepowered.api.entity.living.Bat;
 import org.spongepowered.api.entity.living.player.Player;
 
 /**
- * An {@link DataManipulator} for the "sleeping" state of a
+ * A {@link DataManipulator} for the "sleeping" state of a
  * {@link Player}. Also applicable to {@link Bat}s where they can be
  * shown as "sleeping".
  */

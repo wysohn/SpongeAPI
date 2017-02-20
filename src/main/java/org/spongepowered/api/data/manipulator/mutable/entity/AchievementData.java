@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.SetValue;
 import org.spongepowered.api.statistic.achievement.Achievement;
 
 /**
- * An {@link DataManipulator} containing data related to having earned
+ * A {@link DataManipulator} containing data related to having earned
  * {@link Achievement}s. The use of {@link SetValue} is to prevent any possible
  * duplication when it comes to granting/removing {@link Achievement}s without
  * the worry of losing track.

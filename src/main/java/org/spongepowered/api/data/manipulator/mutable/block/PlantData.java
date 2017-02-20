@@ -30,7 +30,7 @@ import org.spongepowered.api.data.manipulator.mutable.VariantData;
 import org.spongepowered.api.data.type.PlantType;
 
 /**
- * An {@link VariantData} for the {@link PlantType} state. Usually applicable
+ * A {@link VariantData} for the {@link PlantType} state. Usually applicable
  * to {@link BlockTypes#RED_FLOWER} and {@link BlockTypes#YELLOW_FLOWER}.
  */
 public interface PlantData extends VariantData<PlantType, PlantData, ImmutablePlantData> {

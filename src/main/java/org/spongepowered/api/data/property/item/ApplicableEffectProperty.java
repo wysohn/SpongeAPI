@@ -36,7 +36,7 @@ import java.util.Set;
 import javax.annotation.Nullable;
 
 /**
- * Represents an {@link Property} that applies a set of
+ * Represents a {@link Property} that applies a set of
  * {@link PotionEffect}s on use, consumption, or on equip. The properties
  * are not mutable, but can be compared against.
  *

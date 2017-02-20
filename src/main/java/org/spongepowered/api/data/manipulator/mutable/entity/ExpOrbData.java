@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.entity.ExperienceOrb;
 
 /**
- * An {@link DataManipulator} for the amount of "experience" stored in
+ * A {@link DataManipulator} for the amount of "experience" stored in
  * an {@link ExperienceOrb}.
  */
 public interface ExpOrbData extends DataManipulator<ExpOrbData, ImmutableExpOrbData> {

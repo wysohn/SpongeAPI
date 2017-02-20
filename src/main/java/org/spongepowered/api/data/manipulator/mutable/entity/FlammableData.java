@@ -29,7 +29,7 @@ import org.spongepowered.api.data.manipulator.immutable.entity.ImmutableFlammabl
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * An {@link DataManipulator} for the "flaming" state of an entity. This state
+ * A {@link DataManipulator} for the "flaming" state of an entity. This state
  * is different from being set on fire as the entity is igniting itself without
  * taking damage.
  */

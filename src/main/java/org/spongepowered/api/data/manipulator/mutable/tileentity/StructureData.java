@@ -32,7 +32,7 @@ import org.spongepowered.api.data.type.StructureMode;
 import org.spongepowered.api.data.value.mutable.Value;
 
 /**
- * Represents the data for an {@link Structure}.
+ * Represents the data for a {@link Structure}.
  */
 public interface StructureData extends DataManipulator<StructureData, ImmutableStructureData> {
 

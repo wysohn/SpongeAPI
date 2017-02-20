@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.entity.living.monster.Enderman;
 
 /**
- * An {@link DataManipulator} for the "screaming" state of an {@link Enderman}.
+ * A {@link DataManipulator} for the "screaming" state of an {@link Enderman}.
  * Usually, when an {@link Enderman} is "screaming", they are standing still
  * and "shaking".
  */

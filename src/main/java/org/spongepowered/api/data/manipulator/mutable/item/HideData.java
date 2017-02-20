@@ -30,7 +30,7 @@ import org.spongepowered.api.data.value.mutable.Value;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 /**
- * An {@link DataManipulator} handling the hidden state of various pieces of information
+ * A {@link DataManipulator} handling the hidden state of various pieces of information
  * attached to an {@link ItemStack}.
  */
 public interface HideData extends DataManipulator<HideData, ImmutableHideData> {
