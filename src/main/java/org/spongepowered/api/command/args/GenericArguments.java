@@ -753,7 +753,7 @@ public final class GenericArguments {
      * Useful for inputs with a very large domain, like strings and integers.
      */
     private abstract static class KeyElement extends CommandElement {
-        private KeyElement(Text key) {
+        protected KeyElement(Text key) {
             super(key);
         }
 

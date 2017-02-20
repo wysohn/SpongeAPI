@@ -102,7 +102,7 @@ public class SkylandsGroundCoverPopulator implements GenerationPopulator {
 
     private abstract static class GroundCoverLayer {
 
-        private GroundCoverLayer() {
+        protected GroundCoverLayer() {
         }
 
         protected abstract BlockType getBlock(int x, int y, int z, int layer, long seed);
