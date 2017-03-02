@@ -24,10 +24,12 @@
  */
 package org.spongepowered.api.item.inventory;
 
+import org.spongepowered.api.util.Direction;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Represents a Block that is a carrier of an Inventory
@@ -41,6 +43,26 @@ public interface BlockCarrier extends Carrier {
      * @return The Locations of the Blocks
      */
     List<Location<World>> getLocations();
+
+    /**
+     * Returns the Inventory at given location if owned by this Carrier
+     *
+     * @param at The location
+     * @return The inventory at given location
+     */
+    Optional<Inventory> getInventory(Location<World> at);
+
+    /**
+     * Returns the Inventory at given location if owned by this Carrier and
+     * accessible from given direction.
+     *
+     * e.g. A Furnace accessed from {@link Direction#DOWN} will return its Fuel Slot
+     *
+     * @param at The Location
+     * @param from The Direction
+     * @return The inventory at the location when accessed from given direction
+     */
+    Optional<Inventory> getInventory(Location<World> at, Direction from);
 
 }
 
