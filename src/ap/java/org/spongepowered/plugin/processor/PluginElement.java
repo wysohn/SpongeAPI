@@ -46,7 +46,7 @@ import javax.lang.model.element.TypeElement;
 
 final class PluginElement {
 
-    private static final String API_VERSION = PluginElement.class.getPackage().getImplementationVersion();
+    private static final String API_VERSION = PluginElement.class.getPackage().getSpecificationVersion();
 
     private final TypeElement element;
     private final AnnotationWrapper<Plugin> annotation;
