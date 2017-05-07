@@ -255,7 +255,27 @@ public interface DataView {
      * @param path The path of the value to get
      * @return The map, if available
      */
-    Optional<? extends Map<?, ?>> getMap(DataQuery path);
+    default Optional<? extends Map<?, ?>> getMap(DataQuery path) {
+        return getMap(path, true);
+    }
+
+    /**
+     * Gets the underlying {@link Map} by path, if available.
+     *
+     * <p>If a {@link Map} does not exist, or data residing at the path is not
+     * an instance of a {@link Map}, an absent is returned.</p>
+     *
+     * <p>If flatten is set to <code>true</code>, any child {@link DataView}
+     * will be replaced by a child map, otherwise, they will remain as
+     * {@link DataView}s. If the object pointed to by this {@link DataQuery}
+     * is a {@link DataView}, it will be converted into a map regardless of the
+     * value of flatten.</p>
+     *
+     * @param path The path of the value to get
+     * @param flatten Whether to flatten child {@link DataView}s.
+     * @return The map, if available
+     */
+    Optional<? extends Map<?, ?>> getMap(DataQuery path, boolean flatten);
 
     /**
      * Gets the {@link Boolean} by path, if available.
