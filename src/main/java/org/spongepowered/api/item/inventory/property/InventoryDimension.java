@@ -37,6 +37,7 @@ import org.spongepowered.api.util.Coerce;
 public class InventoryDimension extends AbstractInventoryProperty<String, Vector2i> {
 
     public static final String PROPERTY_NAM = "inventorydimension";
+    public static final String PROPERTY_NAME = "inventorydimension";
 
     /**
      * Create a new InventoryDimension property with the specified value.
