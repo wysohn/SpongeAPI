@@ -34,8 +34,12 @@ import org.spongepowered.api.CatalogType;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.block.tileentity.TileEntity;
 import org.spongepowered.api.block.trait.BlockTrait;
+import org.spongepowered.api.data.DataContainer;
+import org.spongepowered.api.data.DataSerializable;
+import org.spongepowered.api.data.DataView;
 import org.spongepowered.api.data.ImmutableDataBuilder;
 import org.spongepowered.api.data.ImmutableDataHolder;
+import org.spongepowered.api.data.Queries;
 import org.spongepowered.api.data.key.Key;
 import org.spongepowered.api.data.manipulator.DataManipulator;
 import org.spongepowered.api.data.property.DirectionRelativePropertyHolder;
@@ -318,7 +322,7 @@ public interface BlockState extends ImmutableDataHolder<BlockState>, DirectionRe
      * that contains 4 traits, and only 2 are wanting to be matched,
      * then the other two traits may be variable).
      */
-    final class StateMatcher implements Predicate<BlockState> {
+    final class StateMatcher implements Predicate<BlockState>, DataSerializable {
         private final BlockType type;
         private final BlockTrait<?>[] traits;
         private final Object[] values;
@@ -412,6 +416,27 @@ public interface BlockState extends ImmutableDataHolder<BlockState>, DirectionRe
         @Override
         public int hashCode() {
             return Objects.hashCode(this.type, this.traits, this.values);
+        }
+
+        @Override
+        public int getContentVersion() {
+            return 1;
+        }
+
+        @Override
+        public DataContainer toContainer() {
+            final ImmutableList.Builder<DataView> traitValues = ImmutableList.builder();
+            for (int i = 0; i < this.traits.length; i++) {
+                traitValues.add(DataContainer.createNew()
+                    .set(Queries.BLOCK_TRAIT, this.traits[i].getId())
+                    .set(Queries.TRAIT_VALUE, this.values[i])
+                );
+            }
+            return DataContainer.createNew()
+                .set(Queries.CONTENT_VERSION, this.getContentVersion())
+                .set(Queries.BLOCK_TYPE, this.type)
+                .set(Queries.BLOCK_TRAITS, traitValues)
+                ;
         }
     }
 }

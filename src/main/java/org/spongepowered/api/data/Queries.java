@@ -42,6 +42,11 @@ public final class Queries {
     public static final DataQuery WEIGHTED_SERIALIZABLE = of("DataSerializable");
     public static final DataQuery WEIGHTED_SERIALIZABLE_WEIGHT = of("Weight");
 
+    // StateMatcher
+    public static final DataQuery BLOCK_TRAITS = of("TraitMap");
+    public static final DataQuery BLOCK_TRAIT = of("Trait");
+    public static final DataQuery TRAIT_VALUE = of("TraitValue");
+
     // Item Enchantment
     public static final DataQuery ENCHANTMENT_ID = of("Enchantment");
     public static final DataQuery LEVEL = of("Level");
